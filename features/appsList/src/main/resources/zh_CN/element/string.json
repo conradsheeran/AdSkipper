@@ -1,0 +1,12 @@
+{
+  "string": [
+    {
+      "name": "appList_HomeTitle",
+      "value": "应用列表"
+    },
+    {
+      "name": "setup_HomeTitle",
+      "value": "设置"
+    }
+  ]
+}

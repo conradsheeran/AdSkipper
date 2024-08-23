@@ -1,0 +1,60 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "module description"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "AdSkipper"
+    },
+    {
+      "name": "HomeTitle",
+      "value": "HOME"
+    },
+    {
+      "name": "menuContent_1",
+      "value": "Setup"
+    },
+    {
+      "name": "menuContent_2",
+      "value": "Feedback"
+    },
+    {
+      "name": "menuContent_3",
+      "value": "Donate"
+    },
+    {
+      "name": "Accessibility_label",
+      "value": "AdSkipper"
+    },
+    {
+      "name": "Accessibility_desc",
+      "value": "This permission will be used to skip the splash screen ads (AdSkipper is an open source software and will not infringe your privacy)"
+    },
+    {
+      "name": "WarningTitle",
+      "value": "Warning:"
+    },
+    {
+      "name": "WarningContent_1",
+      "value": "1. This software is developed based on accessibility permissions and is used to skip the opening screen ads of some applications. To ensure smooth operation of the software, please turn on the system accessibility permissions and set the background to keep the application working.This app will not upload any of your private data, please feel free to use it."
+    },
+    {
+      "name": "WarningContent_2",
+      "value": "2. To ensure smooth operation of the software, please turn on the system accessibility permissions and set the background to keep the application working."
+    },
+    {
+      "name": "WarningPageButton_1",
+      "value": "Agree and Continue"
+    },
+    {
+      "name": "WarningPageButton_2",
+      "value": "Disagree"
+    }
+  ]
+}

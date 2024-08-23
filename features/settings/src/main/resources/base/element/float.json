@@ -1,0 +1,44 @@
+{
+  "float": [
+    {
+      "name": "title",
+      "value": "32.00"
+    },
+    {
+      "name": "TitleFontWeight",
+      "value": "600.0"
+    },
+    {
+      "name": "TitleTopPadding",
+      "value": "11.0"
+    },
+    {
+      "name": "TitleLRPadding",
+      "value": "16.0"
+    },
+    {
+      "name": "BorderRadius",
+      "value": "16.0"
+    },
+    {
+      "name": "subtitle",
+      "value": "18.0"
+    },
+    {
+      "name": "IconSize",
+      "value": "36.0"
+    },
+    {
+      "name": "ListHeight",
+      "value": "56.0"
+    },
+    {
+      "name": "content",
+      "value": "14.0"
+    },
+    {
+      "name": "setup_ListHeight",
+      "value": "84.0"
+    }
+  ]
+}

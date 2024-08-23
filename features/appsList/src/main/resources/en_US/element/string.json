@@ -1,0 +1,12 @@
+{
+  "string": [
+    {
+      "name": "appList_HomeTitle",
+      "value": "Apps List"
+    },
+    {
+      "name": "setup_HomeTitle",
+      "value": "Setup"
+    }
+  ]
+}

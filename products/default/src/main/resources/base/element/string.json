@@ -1,0 +1,60 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "module description"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "AdSkipper"
+    },
+    {
+      "name": "HomeTitle",
+      "value": "主页"
+    },
+    {
+      "name": "menuContent_1",
+      "value": "设置"
+    },
+    {
+      "name": "menuContent_3",
+      "value": "请作者喝咖啡"
+    },
+    {
+      "name": "menuContent_2",
+      "value": "问题上报"
+    },
+    {
+      "name": "Accessibility_label",
+      "value": "AdSkipper"
+    },
+    {
+      "name": "Accessibility_desc",
+      "value": "该权限将用于跳过开屏广告（AdSkipper是一个开源软件，不会侵犯您的隐私安全）"
+    },
+    {
+      "name": "WarningContent_1",
+      "value": "1、该软件是基于无障碍权限开发，用于跳过部分应用的开屏广告。该应用不会上传任何您的隐私数据，请您放心使用。"
+    },
+    {
+      "name": "WarningTitle",
+      "value": "注意："
+    },
+    {
+      "name": "WarningContent_2",
+      "value": "2、为保证软件流畅运行，请打开系统无障碍权限，并设置后台常驻，以保证应用持续工作。"
+    },
+    {
+      "name": "WarningPageButton_1",
+      "value": "同意并继续"
+    },
+    {
+      "name": "WarningPageButton_2",
+      "value": "不同意"
+    }
+  ]
+}

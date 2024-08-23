@@ -1,0 +1,69 @@
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "certpath": "C:\\Users\\conra\\.ohos\\config\\default_AdSkipper_OCLpNHi-8xd-PfLV0o2mCOr18WWYBJ1Ozl-bdL1QLPg=.cer",
+          "storePassword": "0000001B577434F51BAE3D02E9B0ACDAC1073A240BB237AC32F3772D2DB6F563C327D080CE28C75895F2E4",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001BE78AB2105F11B587E1A7C28EB53DCBEF927A69339E07849F65B25931A4E38C0C3B738773EC3F8C",
+          "profile": "C:\\Users\\conra\\.ohos\\config\\default_AdSkipper_OCLpNHi-8xd-PfLV0o2mCOr18WWYBJ1Ozl-bdL1QLPg=.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "C:\\Users\\conra\\.ohos\\config\\default_AdSkipper_OCLpNHi-8xd-PfLV0o2mCOr18WWYBJ1Ozl-bdL1QLPg=.p12"
+        }
+      }
+    ],
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+        "compatibleSdkVersion": "5.0.0(12)",
+        "runtimeOS": "HarmonyOS",
+      }
+    ],
+    "buildModeSet": [
+      {
+        "name": "debug",
+      },
+      {
+        "name": "release"
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "default",
+      "srcPath": "./products/default",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "utils",
+      "srcPath": "./common/utils",
+    },
+    {
+      "name": "uicomponents",
+      "srcPath": "./common/uicomponents",
+    },
+    {
+      "name": "settings",
+      "srcPath": "./features/settings"
+    },
+    {
+      "name": "HomePage",
+      "srcPath": "./features/HomePage",
+    },
+    {
+      "name": "appsList",
+      "srcPath": "./features/appsList"
+    }
+  ]
+}
