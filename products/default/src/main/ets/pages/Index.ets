@@ -5,6 +5,7 @@ import '@ohos/settings/src/main/ets/pages/index';
 import { router, SymbolGlyphModifier } from '@kit.ArkUI';
 import { BrowsableAbility, JumpToApp } from '@ohos/utils';
 import { common } from '@kit.AbilityKit';
+import { accessibility } from '@kit.AccessibilityKit';
 
 @CustomDialog
 struct CustomDialog_HomePage {
@@ -44,12 +45,13 @@ struct CustomDialog_HomePage {
             const context: common.UIAbilityContext = getContext(this) as common.UIAbilityContext;
             const bundleName: string = 'com.huawei.hmos.settings'
             const abilityName: string = 'com.huawei.hmos.settings.MainAbility'
-            JumpToApp(context, bundleName, abilityName);
+            const uri: string = 'accessibility_feature'
+            JumpToApp(context, bundleName, abilityName, uri);
           })
           .backgroundColor(Color.Transparent)
           .fontColor($r('sys.color.font_primary'))
           .borderRadius($r('app.float.BorderRadius'))
-          .width('49%')
+          .width('48%')
 
         Divider().vertical(true).height(22).color($r('sys.color.font_primary')).opacity(0.6).margin({ left: 8, right: 8 })
 
@@ -60,7 +62,7 @@ struct CustomDialog_HomePage {
           .backgroundColor(Color.Transparent)
           .fontColor(Color.Black)
           .borderRadius($r('app.float.BorderRadius'))
-          .width('49%')
+          .width('48%')
       }
       .width('90%')
       .margin({bottom: '7%'})
@@ -83,7 +85,10 @@ struct Index {
   })
 
   onPageShow(): void {
-    this.dialogController.open()
+    let accessibilityStatus: boolean = accessibility.isOpenAccessibilitySync();
+    if (!accessibilityStatus) {
+      this.dialogController.open()
+    }
   }
 
   build() {

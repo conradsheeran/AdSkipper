@@ -1,5 +1,8 @@
 import { router } from '@kit.ArkUI'
 import '@ohos/appsList/src/main/ets/pages/Index'
+import { accessibility } from '@kit.AccessibilityKit';
+import { common } from '@kit.AbilityKit';
+import { JumpToApp } from '@ohos/utils';
 
 @Component
 export struct HomePage {
@@ -37,7 +40,19 @@ export struct HomePage {
         Toggle({ type: ToggleType.Switch, isOn: false })
           .onChange((isOn: boolean) => {
             if(isOn) {
-              // 需要执行的操作
+              let accessibilityStatus: boolean = accessibility.isOpenAccessibilitySync();
+              if (!accessibilityStatus) {
+                const context: common.UIAbilityContext = getContext(this) as common.UIAbilityContext;
+                const bundleName: string = 'com.huawei.hmos.settings'
+                const abilityName: string = 'com.huawei.hmos.settings.MainAbility'
+                const uri: string = 'accessibility_feature'
+                JumpToApp(context, bundleName, abilityName, uri);
+              }
+            }
+            if (!isOn) {
+
+              // TODO: perf: Improve the function of turning off skipping ads
+
             }
           })
           .size({

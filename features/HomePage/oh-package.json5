@@ -6,6 +6,7 @@
   "author": "",
   "license": "Apache-2.0",
   "dependencies": {
-    "@ohos/appsList": "file:../../features/appsList"
+    "@ohos/appsList": "file:../../features/appsList",
+    '@ohos/utils': "file:../../common/utils"
   }
 }
