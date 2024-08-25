@@ -1,6 +1,8 @@
 // TODO: perf: Improve Accessibility services
 
-import { AccessibilityExtensionAbility, AccessibilityEvent } from '@kit.AccessibilityKit';
+import { AccessibilityExtensionAbility, AccessibilityEvent,
+  AccessibilityExtensionContext,
+  accessibility} from '@kit.AccessibilityKit';
 import AccessibilityManager from './AccessibilityManager';
 
 class AccessibilityExtAbility extends AccessibilityExtensionAbility {
